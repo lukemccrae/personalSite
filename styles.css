@@ -1,4 +1,16 @@
 #logo {
-  height: 35em;
-  width: 35em;
+    height: 35em;
+    width: 35em;
+}
+
+#nav {
+    display: inline;
+}
+
+#name {
+    display: inline;
+}
+
+#projectTitle {
+    display: inline;
 }

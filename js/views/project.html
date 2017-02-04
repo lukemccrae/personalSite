@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="" ng-repeat="project in $ctrl.projects">
+        <h2 id="projectTitle" class="image-heading">{{project.name}}</h2>
+        <div class="media-left">
+            <img height="200" width="200" src="{{project.image_url}}" class="media-object">
+            <div class="media-body">
+                <p>{{project.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
