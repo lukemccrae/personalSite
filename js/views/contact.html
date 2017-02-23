@@ -1,0 +1,30 @@
+<nav ng-click="$ctrl.showNav = !$ctrl.showNav" class="navbar navbar-default">
+    <div class="container container-fluid">
+        <img id="nameLogo" src="images/logo.jpg" alt="">
+        <p class="">Luke McCrae</p>
+
+        <nav class="pull-right">
+            <button href="/" type="button" ui-sref="home" class="btn btn-default">Home</button>
+            <button type="button" ui-sref="project" class="btn btn-default">Projects</button>
+            <button type="button" ui-sref="contact" class="btn btn-default">Contact</button>
+
+        </nav>
+    </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="" ng-repeat="contact in $ctrl.contacts">
+        <h2 class="image-heading"></h2>
+        <div class="media-left">
+            <a href="{{contact.link}}">
+                <img height="120" width="120" src="{{contact.image_url}}" class="media-object">
+            </a>
+            <p>{{contact.name}}</p>
+            <div class="media-body">
+                <p>{{contact.description}}</p>
+            </div>
+
+        </div>
+    </div>
+</div>

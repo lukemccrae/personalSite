@@ -7,13 +7,13 @@
             templateUrl: 'js/views/home.html'
         })
 
-    function controller() {
-        const vm = this
+    function controller($state) {
+        const vm = this;
 
         vm.$onInit = function() {
             console.log("oninit home");
         }
-        vm.goproject = function() {
+        vm.goproject = function($state) {
             console.log("tfyuuhig");
             $state.go('project')
         }

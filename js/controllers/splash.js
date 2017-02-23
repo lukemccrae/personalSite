@@ -2,21 +2,20 @@
     'use strict'
 
     angular.module('app')
-        .component('splash', {
+        .component('home', {
             controller: controller,
-            templateUrl: 'js/views/splash.html'
+            templateUrl: 'js/views/home.html'
         })
 
     function controller($state) {
-        const vm = this
+        const vm = this;
 
         vm.$onInit = function() {
-            console.log("splash oninit");
+            console.log("oninit home");
         }
-
-        vm.goHome = function(house) {
-            console.log(" go home");
-            $state.go('home')
+        vm.goHome = function($state) {
+            console.log("tfyuuhig");
+            $state.go('project')
         }
     }
 

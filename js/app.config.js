@@ -9,24 +9,14 @@
         $locationProvider.html5Mode(true)
         $stateProvider
             .state({
-                name: 'splash',
-                url: '/',
-                component: 'splash',
-            })
-            .state({
                 name: 'home',
-                url: '/home',
+                url: '/',
                 component: 'home',
             })
             .state({
                 name: 'project',
                 url: '/project',
                 component: 'project',
-            })
-            .state({
-                name: 'blog',
-                url: '/blog',
-                component: 'blog',
             })
             .state({
                 name: 'post',

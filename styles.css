@@ -1,16 +1,17 @@
-#logo {
-    height: 35em;
-    width: 35em;
+#splashLogo {
+    height: 10em;
+    width: 10em;
+    margin-top: 40vh;
 }
 
-#nav {
-    display: inline;
+#nameLogo {
+    height: 4em;
+    width: 4em;
 }
 
-#name {
-    display: inline;
-}
-
-#projectTitle {
-    display: inline;
+body {
+    background-image: url("http://i.imgur.com/uCeeRt1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
