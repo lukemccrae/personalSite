@@ -1,19 +1,20 @@
-<nav ng-click="$ctrl.showNav = !$ctrl.showNav" class="navbar navbar-default">
+<nav class="navbar navbar-default">
     <div class="container container-fluid">
-        <img id="nameLogo" src="images/logo.jpg" alt="">
-        <p class="">Luke McCrae</p>
+        <img id="nameLogo" class="inline" src="images/logo.png" alt="">
+        <p class="inline">Luke McCrae</p>
 
-        <nav class="pull-right">
+        <nav class="pull-right inline">
             <button href="/" type="button" ui-sref="home" class="btn btn-default">Home</button>
             <button type="button" ui-sref="project" class="btn btn-default">Projects</button>
             <button type="button" ui-sref="contact" class="btn btn-default">Contact</button>
+            <button type="button" ui-sref="blog" class="btn btn-default">Blog</button>
 
         </nav>
     </div>
     </div>
 </nav>
 
-<div class="container">
+<div class="white container">
     <div class="" ng-repeat="project in $ctrl.projects">
         <h2 class="image-heading">{{project.name}}</h2>
         <div class="media-left">

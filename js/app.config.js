@@ -9,8 +9,13 @@
         $locationProvider.html5Mode(true)
         $stateProvider
             .state({
-                name: 'home',
+                name: 'splash',
                 url: '/',
+                component: 'splash',
+            })
+            .state({
+                name: 'home',
+                url: '/home',
                 component: 'home',
             })
             .state({
@@ -27,6 +32,11 @@
                 name: 'contact',
                 url: '/contact',
                 component: 'contact',
+            })
+            .state({
+                name: 'blog',
+                url: '/blog',
+                component: 'blog',
             })
     }
 }());

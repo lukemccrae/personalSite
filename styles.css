@@ -1,17 +1,47 @@
 #splashLogo {
     height: 10em;
     width: 10em;
-    margin-top: 40vh;
 }
 
 #nameLogo {
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
+}
+
+#splash {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    margin-top: 35vh;
+}
+
+#splashName {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10em;
+}
+
+.white {
+    background-color: white;
+}
+
+.fixedNav {
+    position: fixed;
 }
 
 body {
     background-image: url("http://i.imgur.com/uCeeRt1.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    overflow: hidden;
+    background-attachment: fixed;
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+}
+
+.inline {
+    display: inline;
 }

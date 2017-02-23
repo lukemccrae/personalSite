@@ -1,23 +1,30 @@
-<nav ng-click="$ctrl.showNav = !$ctrl.showNav" class="navbar navbar-default">
+<nav class="navbar navbar-default">
     <div class="container container-fluid">
-        <img id="nameLogo" src="images/logo.jpg" alt="">
-        <p class="">Luke McCrae</p>
+        <img id="nameLogo" class="inline" src="images/logo.png" alt="">
+        <p class="inline">Luke McCrae</p>
 
-        <nav class="pull-right">
+        <nav class="pull-right inline">
             <button href="/" type="button" ui-sref="home" class="btn btn-default">Home</button>
             <button type="button" ui-sref="project" class="btn btn-default">Projects</button>
             <button type="button" ui-sref="contact" class="btn btn-default">Contact</button>
+            <button type="button" ui-sref="blog" class="btn btn-default">Blog</button>
 
         </nav>
     </div>
     </div>
 </nav>
 
-<div class="row">
-    <div class="col-md-8">
-        <img id="splashLogo" class="center-block" ui-sref="project" class="center-block" src="images/logo.jpg" alt="">
-        <h1 class="text-center">Luke McCrae FULL STACK WEB DEVELOPER</h1>
-        <h1 class="text-center"></h1>
+<div class="white container">
+    <div class="inline" ng-repeat="content in $ctrl.contents">
+        <h2 class="image-heading">Hi, this is my website. I am currently looking for a job as a full stack developer. Check out my blog and projects, I would love to talk more about them!</h2>
+        <div class="media-left">
+            <p>{{contents.name}}</p>
+            <a href="">
+                <img height="120" width="120" src="{{post.image_url}}" class="media-object">
+            </a>
+            <div class="media-body">
+                <p>{{post.content}}</p>
+            </div>
+        </div>
     </div>
-
 </div>

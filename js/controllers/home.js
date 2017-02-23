@@ -17,6 +17,10 @@
             console.log("tfyuuhig");
             $state.go('project')
         }
+
+        vm.contents = [{
+            name: 'luke McCrae'
+        }]
     }
 
 

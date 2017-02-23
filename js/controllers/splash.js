@@ -2,9 +2,9 @@
     'use strict'
 
     angular.module('app')
-        .component('home', {
+        .component('splash', {
             controller: controller,
-            templateUrl: 'js/views/home.html'
+            templateUrl: 'js/views/splash.html'
         })
 
     function controller($state) {

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default">
+    <div class="container container-fluid">
+        <img id="nameLogo" class="inline" src="images/logo.png" alt="">
+        <p class="inline">Luke McCrae</p>
+
+        <nav class="pull-right inline">
+            <button href="/" type="button" ui-sref="home" class="btn btn-default">Home</button>
+            <button type="button" ui-sref="project" class="btn btn-default">Projects</button>
+            <button type="button" ui-sref="contact" class="btn btn-default">Contact</button>
+            <button type="button" ui-sref="blog" class="btn btn-default">Blog</button>
+
+        </nav>
+    </div>
+    </div>
+</nav>
+
+<div class="white container">
+    <div class="inline" ng-repeat="post in $ctrl.posts">
+        <h2 class="image-heading"></h2>
+        <div class="media-left">
+            <p>{{post.title}}</p>
+            <a href="">
+                <img height="120" width="120" src="{{post.image_url}}" class="media-object">
+            </a>
+            <div class="media-body">
+                <p>{{post.content}}</p>
+            </div>
+
+        </div>
+    </div>
+</div>
