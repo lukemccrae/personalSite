@@ -19,7 +19,8 @@
         }
 
         vm.contents = [{
-            name: 'luke McCrae'
+            name: 'luke McCrae',
+            img_url: 'https://s3-us-west-2.amazonaws.com/quilt-production/logo/2016/11/mNEkn0J2uKc77AZR1D.png'
         }]
     }
 

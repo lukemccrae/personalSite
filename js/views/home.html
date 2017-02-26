@@ -1,7 +1,7 @@
-<nav class="navbar navbar-default">
-    <div class="container container-fluid">
+<nav class="container">
+    <div class="container container-fluid fixedNav">
         <img id="nameLogo" class="inline" src="images/logo.png" alt="">
-        <p class="inline">Luke McCrae</p>
+        <!-- <p class="inline">Luke McCrae</p> -->
 
         <nav class="pull-right inline">
             <button href="/" type="button" ui-sref="home" class="btn btn-default">Home</button>
@@ -14,16 +14,16 @@
     </div>
 </nav>
 
-<div class="white container">
-    <div class="inline" ng-repeat="content in $ctrl.contents">
-        <h2 class="image-heading">Hi, this is my website. I am currently looking for a job as a full stack developer. Check out my blog and projects, I would love to talk more about them!</h2>
-        <div class="media-left">
-            <p>{{contents.name}}</p>
-            <a href="">
-                <img height="120" width="120" src="{{post.image_url}}" class="media-object">
-            </a>
-            <div class="media-body">
-                <p>{{post.content}}</p>
+<div style="margin-top: 5em;" class="">
+    <div class="white white col-md-6 col-md-offset-2">
+        <div style="margin-top: 4em;" class="inline" ng-repeat="content in $ctrl.contents">
+            <img height="120" width="120" src="{{content.img_url}}" class="media-object">
+            <h2 class="image-heading">Hi, this is my website. I am currently looking for a job as a full stack developer. Check out my blog and projects, I would love to talk more about them!</h2>
+            <div class="media-left">
+                <p>{{contents.name}}</p>
+                <div class="media-body">
+                    <p>{{post.content}}</p>
+                </div>
             </div>
         </div>
     </div>
