@@ -5,7 +5,7 @@
 
     config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider']
     //
-    function config($stateProvider, $urlRouterProvider, $locationProvider) {
+    function config($stateProvider, $urlRouterProvider, $locationProvider, $http) {
         $locationProvider.html5Mode(true)
         $stateProvider
             .state({
@@ -22,11 +22,6 @@
                 name: 'project',
                 url: '/project',
                 component: 'project',
-            })
-            .state({
-                name: 'post',
-                url: '/blog/post/:id',
-                component: 'post',
             })
             .state({
                 name: 'contact',

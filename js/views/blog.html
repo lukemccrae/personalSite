@@ -16,10 +16,10 @@
 
 <div style="margin-top: 5em;" class="">
     <div class="white col-md-6 col-md-offset-2">
-        <div ng-show="!$ctrl.showPost" class="inline" ng-repeat="post in $ctrl.posts">
+        <div class="inline" ng-repeat="post in $ctrl.posts[0].data.post">
             <h2 id="blogTitle" class="image-heading"></h2>
             <div class="media-left">
-                <a ng-click="$ctrl.goPost(post)">
+                <a ng-click="post.show = !post.show">
                     <h2>{{post.title}}</h2>
                 </a>
                 <span><img class="blog-icon" src="images/calendar.png" alt=""> {{post.date}}</span>
@@ -29,6 +29,9 @@
                 <div class="media-body">
                     <p>{{post.summary}}</p>
                 </div>
+            </div>
+            <div ng-show="post.show" class="">
+                <img style="display: block;" height="100" width="100" src="{{post.image_url}}" alt=""> {{post.content}}
             </div>
         </div>
     </div>
