@@ -15,11 +15,11 @@
 </nav>
 
 <div style="margin-top: 5em;" class="">
-    <div class="white col-md-6 col-md-offset-2">
+    <div id="box" class="white col-md-6 col-md-offset-2">
         <div class="" ng-repeat="project in $ctrl.projects">
             <h2 class="image-heading">{{project.name}}</h2>
             <div class="media-left">
-                <img height="180" width="180" src="{{project.image_url}}" class="media-object">
+                <img id="projectImg" height="180" width="180" src="{{project.image_url}}" class="media-object">
                 <div class="">
                     <p>{{project.description}}</p>
                 </div>

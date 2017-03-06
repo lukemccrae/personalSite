@@ -32,10 +32,6 @@
     background-color: white;
 }
 
-#blogTitle {
-    margin: 0;
-}
-
 .fixedNav {
     position: fixed;
 }
@@ -43,6 +39,18 @@
 .blog-icon {
     height: 1.3em;
     width: 1.3em;
+}
+
+#box {
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+}
+
+#projectImg {
+    border-radius: 50%;
+    border-width: thin;
+    border-style: solid;
 }
 
 body {

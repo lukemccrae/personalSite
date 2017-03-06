@@ -15,8 +15,8 @@
 </nav>
 
 <div style="margin-top: 5em;" class="">
-    <div class="white col-md-6 col-md-offset-2">
-        <div class="inline" ng-repeat="post in $ctrl.posts[0].data.post">
+    <div id="box" class="white col-md-6 col-md-offset-2">
+        <div class="inline" ng-repeat="post in $ctrl.posts[0].data.post | orderBy:$ctrl.post.id">
             <h2 id="blogTitle" class="image-heading"></h2>
             <div class="media-left">
                 <a ng-click="post.show = !post.show">
@@ -32,6 +32,7 @@
             </div>
             <div ng-show="post.show" class="">
                 <img style="display: block;" height="100" width="100" src="{{post.image_url}}" alt=""> {{post.content}}
+                <button style="display: block;" type="button" class="btn" ng-click="post.show = !post.show" name="button">Show Less</button>
             </div>
         </div>
     </div>
